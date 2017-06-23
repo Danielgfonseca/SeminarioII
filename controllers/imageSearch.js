@@ -1,11 +1,11 @@
-const GETTY_IMAGES_API_KEY = '<place your GettyImages api token here>';
+const GETTY_IMAGES_API_KEY = 'xafg5hdprykc9pepau5g6ucw';
 
 const request = require('request');
 
 module.exports = (req, res) => {
     if (req.body.result.action === 'image') {
         const imageName = req.body.result.parameters['image_name'];
-        const apiUrl = 'https://api.gettyimages.com/v3/search/images?fields=id,title,thumb,referral_destinations&sort_order=best&phrase=' + imageName;
+        const apiUrl = 'https://api.gettyimages.com/v3/search/images?fields=id,title,thumb,referral_destinations&sort_order=most_popular&phrase=' + imageName;
 
         request({
             uri: apiUrl,

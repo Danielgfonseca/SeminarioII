@@ -1,16 +1,12 @@
 {
-  "name": "chatbotapi",
-  "version": "0.0.1",
+  "name": "apiai-tutorial",
+  "version": "1.0.0",
   "description": "Chat Bot para messenger com node e api.ai",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Danielgfonseca/SeminarioII.git"
-  },
-  "keywords": [
+    "keywords": [
     "node",
     "api.ai",
     "danielgfonseca",
@@ -25,9 +21,10 @@
   },
   "homepage": "https://github.com/Danielgfonseca/SeminarioII#readme",
   "dependencies": {
-    "apiai": "^4.0.2",
-    "body-parser": "^1.17.2",
-    "express": "^4.15.3",
-    "request": "^2.81.0"
+    "apiai": "^4.0.0",
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "gettyimages-api": "^2.2.0",
+    "request": "^2.79.0"
   }
 }
