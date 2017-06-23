@@ -16,6 +16,9 @@
   ],
   "author": "Daniel Fonseca",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Danielgfonseca/SeminarioII/issues"
+  },
   "homepage": "https://github.com/Danielgfonseca/SeminarioII#readme",
   "dependencies": {
     "apiai": "^4.0.0",
