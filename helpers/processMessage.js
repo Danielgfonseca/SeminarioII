@@ -1,5 +1,5 @@
-const API_AI_TOKEN = '576bd1b9354d43dc86d42ff748adf404';
-const FACEBOOK_ACCESS_TOKEN = 'EAADdPjdXFFUBAP6UXJ1NguDIo6ZCPmdXRWzsFAlXMn2cN5DP8dZAarg9MIhr87caeubfZBgJLf8i1loqpM4Riw0RiWQ1HOMGXO9hUXiV00VuEqSbRSIBZA8ZC6L7Xrl8JPcYuQtrbEENR6CUvdo4pJwl7krBTPDnr2OzgUoy0LgZDZD';
+const API_AI_TOKEN = '6990213fa7a5469e8fe8566845cf5814';
+const FACEBOOK_ACCESS_TOKEN = 'EAAbyKQKYZCyMBALnZCQkf2p1K6pS3NngcwDZBEzKGK10xH0f1RvUvCcCInuMjmPh62EV7uCd1GvmsDdXEcvBbYbxyU9VLA5zL2KTTVPI8TBfyZBHA7lYy22c3tdYxpIBSRXYvuHb4Q3o0fxwiIJPhBVxXcsFXpdDPX7dwcO0VQZDZD';
 
 const request = require('request');
 
@@ -7,7 +7,7 @@ const apiAiClient = require('apiai')(API_AI_TOKEN);
 
 const sendImage = (senderId, imageUri) => {
     return request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.9/me/messages',
         qs: { access_token: FACEBOOK_ACCESS_TOKEN },
         method: 'POST',
         json: {
@@ -24,7 +24,7 @@ const sendImage = (senderId, imageUri) => {
 
 const sendTextMessage = (senderId, text) => {
     request({
-        url: 'https://graph.facebook.com/v2.6/me/messages',
+        url: 'https://graph.facebook.com/v2.9/me/messages',
         qs: { access_token: FACEBOOK_ACCESS_TOKEN },
         method: 'POST',
         json: {
